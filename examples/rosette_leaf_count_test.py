@@ -6,7 +6,7 @@
 import deepplantphenomics as dpp
 import os
 
-dir = './data/Ara2013-Canon'
+dir = '/data'
 
 images = [os.path.join(dir, name) for name in os.listdir(dir) if
           os.path.isfile(os.path.join(dir, name)) & name.endswith('_rgb.png')]
