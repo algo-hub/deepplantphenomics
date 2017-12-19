@@ -6,7 +6,7 @@
 import deepplantphenomics as dpp
 import os
 
-dir = '/data'
+dir = '/data/images'
 
 images = [os.path.join(dir, name) for name in os.listdir(dir) if
           os.path.isfile(os.path.join(dir, name))]

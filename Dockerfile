@@ -60,6 +60,8 @@ RUN git clone https://github.com/algo-hub/deepplantphenomics.git
 WORKDIR /deepplantphenomics
 RUN python setup.py install
 
-RUN mkdir -p /data
+WORKDIR /
 
-COPY ./images /data
+RUN rm -d -r /deepplantphenomics
+
+RUN mkdir -p /data
