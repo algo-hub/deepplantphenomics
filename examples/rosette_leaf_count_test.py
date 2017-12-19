@@ -9,7 +9,7 @@ import os
 dir = '/data'
 
 images = [os.path.join(dir, name) for name in os.listdir(dir) if
-          os.path.isfile(os.path.join(dir, name)) & name.endswith('_rgb.png')]
+          os.path.isfile(os.path.join(dir, name))]
 
 # Sort so the outputs match the order in the labels file
 images = sorted(images)
