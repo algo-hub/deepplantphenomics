@@ -1,7 +1,6 @@
 FROM ubuntu:16.04
 
 LABEL maintainer="Mike Cowgill <mike@algohub.com>"
-# Image is based on the official tensorflow image
 
 WORKDIR /
 
